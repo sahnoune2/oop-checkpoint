@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="flex flex-col gap-8">
+    <div
+      style="
+        height: 20rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 18rem;
+      "
+    >
+      <div
+        style="
+          border: 4px solid rgba(15, 0, 222, 0.582);
+          height: 19.5rem;
+          width: 14rem;
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          justify-content: center;
+          align-items: center;
+          border-radius: 2rem;
+          position: relative;
+          background-color: rgb(237, 237, 237);
+        "
+      >
+        <img
+          id="image"
+          class="rounded-[1.7rem] absolute top-0 h-[8rem]"
+          src="../laptop.webp"
+          alt=""
+        />
+        <h2 id="name" class="mt-[9rem] text-blue-500 text-[1.5rem]">
+          Laptop hp
+        </h2>
+        <h4 class="text-blue-500">
+          $ <span class="text-blue-500" id="price">1500</span>
+        </h4>
+        <div style="display: flex; gap: 1rem">
+          <button
+            id="minus"
+            class="bg-blue-500 w-[2rem] border-2 rounded-[1rem] border-black"
+          >
+            -
+          </button>
+          <div id="quantity">0</div>
+          <button
+            id="plus"
+            class="bg-blue-500 w-[2rem] border-2 rounded-[1rem] border-black"
+          >
+            +
+          </button>
+        </div>
+        <button
+          id="add"
+          class="bg-blue-500 w-[6rem] border-2 rounded-[1rem] border-black"
+        >
+          add
+        </button>
+      </div>
+      <div
+        style="
+          border: 4px solid rgba(15, 0, 222, 0.582);
+          height: 19.5rem;
+          width: 14rem;
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          justify-content: center;
+          align-items: center;
+          border-radius: 2rem;
+          position: relative;
+          background-color: rgb(237, 237, 237);
+        "
+      >
+        <img
+          id="image"
+          class="rounded-[1.7rem] absolute top-0 h-[8rem] w-[14rem]"
+          src="../phone.webp"
+          alt=""
+        />
+        <h4 id="name" class="mt-[9rem] text-blue-500 text-[1.5rem]">phone</h4>
+        <h4 class="text-blue-500">$ <span id="price">400</span></h4>
+        <div style="display: flex; gap: 1rem">
+          <button
+            id="minus"
+            class="bg-blue-500 w-[2rem] border-2 rounded-[1rem] border-black"
+          >
+            -
+          </button>
+          <div id="quantity">0</div>
+          <button
+            id="plus"
+            class="bg-blue-500 w-[2rem] border-2 rounded-[1rem] border-black"
+          >
+            +
+          </button>
+        </div>
+        <button
+          id="add"
+          class="bg-blue-500 w-[6rem] border-2 rounded-[1rem] border-black"
+        >
+          add
+        </button>
+      </div>
+      <div
+        style="
+          border: 4px solid rgba(15, 0, 222, 0.582);
+          height: 19.5rem;
+          width: 14rem;
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          justify-content: center;
+          align-items: center;
+          border-radius: 2rem;
+          position: relative;
+          background-color: rgb(237, 237, 237);
+        "
+      >
+        <img
+          id="image"
+          class="rounded-[1.7rem] absolute top-0 h-[8rem] w-[14rem]"
+          src="../tshirt-1.webp"
+          alt=""
+        />
+        <h4 class="mt-[9rem] text-blue-500 text-[1.5rem]" id="name">tshirt</h4>
+        <h4>$ <span id="price">20</span></h4>
+        <div style="display: flex; gap: 1rem">
+          <button
+            id="minus"
+            class="bg-blue-500 w-[2rem] border-2 rounded-[1rem] border-black"
+          >
+            -
+          </button>
+          <div id="quantity">0</div>
+          <button
+            id="plus"
+            class="bg-blue-500 w-[2rem] border-2 rounded-[1rem] border-black"
+          >
+            +
+          </button>
+        </div>
+        <button
+          id="add"
+          class="bg-blue-500 w-[6rem] border-2 rounded-[1rem] border-black"
+        >
+          add
+        </button>
+      </div>
+    </div>
+    <div class="flex gap-6">
+      <div class="flex flex-col w-[80%]">
+        <div class="grid grid-cols-5 border-2 border-blue-500 rounded-2xl">
+          <div class="border-r-2 border-r-blue-500 text-center">image</div>
+          <div class="border-r-2 border-r-blue-500 text-center">name</div>
+          <div class="border-r-2 border-r-blue-500 text-center">price</div>
+          <div class="border-r-2 border-r-blue-500 text-center">quantity</div>
+
+          <div class="text-center">remove</div>
+        </div>
+        <div id="table"></div>
+      </div>
+      <div
+        id="total"
+        class="border-2 border-blue-500 w-[18%] h-[80px] rounded-2xl flex justify-center items-center"
+      >
+        total
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
